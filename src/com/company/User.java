@@ -2,7 +2,6 @@ package com.company;
 
 import java.util.ArrayList;
 
-//TODO add functionality which prevents multiple of the same user from being added
 
 public class User {
     private String firstName;
