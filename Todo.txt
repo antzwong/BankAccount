@@ -9,6 +9,8 @@ add functionality which prevents multiple of the same user from being added
 see if there's a more efficient method for adding savings vs checkings accounts
 change all ints to strings????
 
+might need to add a gitignore depending on what people push 
+
 
 
 
