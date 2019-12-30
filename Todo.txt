@@ -8,6 +8,8 @@ figure out what's going on with the CheckingsAccount constructor
 add functionality which prevents multiple of the same user from being added
 see if there's a more efficient method for adding savings vs checkings accounts
 change all ints to strings????
+Check for the getters if they need this. in front of the variable
+Issue where when savings accounts are made the withdraw limit is 0.0 instead of 500
 
 might need to add a gitignore depending on what people push 
 

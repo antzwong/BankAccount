@@ -6,7 +6,8 @@ public class Main {
 	    User a = new User("John", "Smith", 1);
 	    a.createCheckingsAccount();
 	    a.createSavingsAccount();
-	    a.printAccounts();
+	    System.out.println(a.getAccount(1).getAccountType());
+	    System.out.println(a.getAccount(1).getWithdrawLimit());
 	    User b = new User("Jane", "Smith", 2);
 
     }

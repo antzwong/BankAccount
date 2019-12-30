@@ -31,7 +31,9 @@ public class User {
         }
     }
 
-    Account getAccounts(int accountID) {
+
+
+    Account getAccount(int accountID) {
         for (Account i : accounts) {
             if(i.getAccountID() == accountID) {
                 return i;
