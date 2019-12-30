@@ -6,7 +6,7 @@ public class Main {
 	    User a = new User("John", "Smith", 1);
 	    a.createCheckingsAccount();
 	    a.createSavingsAccount();
-	    a.getAccounts();
+	    a.printAccounts();
 	    User b = new User("Jane", "Smith", 2);
 
     }

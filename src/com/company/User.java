@@ -25,10 +25,22 @@ public class User {
         return SSN;
     }
 
-    public void getAccounts() {
+    public void printAccounts() {
         for (Account i : accounts) {
             i.printAccountInfo();
         }
+    }
+
+    Account getAccounts(int accountID) {
+        for (Account i : accounts) {
+            if(i.getAccountID() == accountID) {
+                return i;
+            }
+        }
+
+        System.out.println("That is not a valid account ID");
+        return null;
+
     }
 
     void createSavingsAccount() {
