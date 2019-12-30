@@ -49,6 +49,7 @@ public class User {
         int newID = generateAccountID();
         Account temp = new Account(newID);
         temp.setAccountType(false);
+        temp.setWithdrawLimit(500.00);
         accounts.add(temp);
     }
 

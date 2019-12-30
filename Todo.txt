@@ -1,5 +1,6 @@
 ***Features***
-UI for interaction with some sort of menu type of action\
+UI for interaction with some sort of menu type of action
+Add in JDBC connection
 
 
 
@@ -8,9 +9,7 @@ figure out what's going on with the CheckingsAccount constructor
 add functionality which prevents multiple of the same user from being added
 see if there's a more efficient method for adding savings vs checkings accounts
 change all ints to strings????
-Check for the getters if they need this. in front of the variable
-Issue where when savings accounts are made the withdraw limit is 0.0 instead of 500
-
+Test the set withdraw limit to make sure its working properly
 might need to add a gitignore depending on what people push 
 
 
@@ -18,3 +17,4 @@ might need to add a gitignore depending on what people push
 
 ***Logs***
 12/29/2019- worked on functionality for accessing a users individual accounts
+12/30/2019- Resolved issue where savings account withdraw value does not default to 500
