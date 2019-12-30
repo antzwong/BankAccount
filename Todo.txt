@@ -5,16 +5,18 @@ Add in JDBC connection
 
 
 ***TODO***
-figure out what's going on with the CheckingsAccount constructor
-add functionality which prevents multiple of the same user from being added
-see if there's a more efficient method for adding savings vs checkings accounts
+Issue in setting withdraw limit of savings to default to 500
 change all ints to strings????
 Test the set withdraw limit to make sure its working properly
-might need to add a gitignore depending on what people push 
+add functionality which prevents multiple of the same user from being added
 
 
 
 
 ***Logs***
-12/29/2019- worked on functionality for accessing a users individual accounts
-12/30/2019- Resolved issue where savings account withdraw value does not default to 500
+12/29/2019:
+	Worked on functionality for accessing an individual account
+
+12/30/2019:
+	Tested nickname functionality and organized methods in Account. 
+	Working on issue where savings account withdraw value does not default to 500

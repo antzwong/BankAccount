@@ -1,13 +1,13 @@
 package com.company;
 
 public class SavingsAccount extends Account {
+    private final int withdrawLimit;
+
     public SavingsAccount(int accountID) {
         super(accountID);
-        this.setWithdrawLimit(500);
+        this.withdrawLimit = 500;
     }
 
-    public SavingsAccount() {
-    }
 
     @Override
     void setWithdrawLimit(double amount) {

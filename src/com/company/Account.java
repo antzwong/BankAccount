@@ -15,9 +15,15 @@ public class Account {
         this.balance = 0;
     }
 
-    void getAccountInfo() {
-
+    void setNickname(String nickname) {
+        this.nickname = nickname;
     }
+
+    String getNickname() {
+        return nickname;
+    }
+
+
 
     void printAccountInfo() {
         System.out.println(getAccountID() + "- " + getAccountType() + " \n" + "Balance: $" + getBalance() + "\n");
@@ -27,9 +33,37 @@ public class Account {
         return withdrawLimit;
     }
 
+    void setWithdrawLimit(double amount) {
+        if(getAccountType().equals("Checking")) {
+            this.withdrawLimit = amount;
+            System.out.println("Your withdraw limit for this account is now $" + amount);
+        } else {
+            System.out.println("Cannot change withdraw limit on savings accounts");
+        }
+    }
+
     int getAccountID() {
         return accountID;
     }
+
+
+    void setAccountType(boolean type) {
+        this.accountType = type;
+    }
+
+
+    private String getAccountType() {
+        if (accountType) {
+            return "Checking";
+        }
+
+        return "Savings";
+    }
+
+    double getBalance() {
+        return balance;
+    }
+
 
     public void deposit(double amount) {
         balance += amount;
@@ -43,26 +77,7 @@ public class Account {
         }
     }
 
-    double getBalance() {
-        return balance;
-    }
 
-    public void setAccountNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    void setAccountType(boolean type) {
-        this.accountType = type;
-    }
-
-    void setWithdrawLimit(double amount) {
-        if(getAccountType().equals("Checking")) {
-            this.withdrawLimit = amount;
-            System.out.println("Your withdraw limit for this account is now $" + amount);
-        } else {
-            System.out.println("Cannot change withdraw limit on savings accounts");
-        }
-    }
 
     private boolean validWithdrawl(double amount) {
         return sufficientFunds(amount) && belowWithdrawLimit(amount);
@@ -85,13 +100,7 @@ public class Account {
         return false;
     }
 
-    String getAccountType() {
-        if (accountType) {
-            return "Checking";
-        }
 
-        return "Savings";
-    }
 
 
 
