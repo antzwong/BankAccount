@@ -47,15 +47,15 @@ public class User {
 
     void createSavingsAccount() {
         int newID = generateAccountID();
-        Account temp = new Account(newID);
+        Account temp = new SavingsAccount(newID);
         temp.setAccountType(false);
-        temp.setWithdrawLimit(500.00);
+        //temp.setWithdrawLimit(500.00);
         accounts.add(temp);
     }
 
     void createCheckingsAccount() {
         int newID = generateAccountID();
-        Account temp = new Account(newID);
+        Account temp = new CheckingsAccount(newID);
         temp.setAccountType(true);
         accounts.add(temp);
     }
