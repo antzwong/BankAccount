@@ -33,14 +33,8 @@ public class Account {
         return withdrawLimit;
     }
 
-    void setWithdrawLimit(double amount) {
-        if(getAccountType().equals("Checking")) {
-            this.withdrawLimit = amount;
-            System.out.println("Your withdraw limit for this account is now $" + amount);
-        } else {
-            System.out.println("Cannot change withdraw limit on savings accounts");
-        }
-    }
+    void setWithdrawLimit(double withdrawLimit) { this.withdrawLimit = withdrawLimit; }
+
 
     int getAccountID() {
         return accountID;
