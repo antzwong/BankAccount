@@ -5,9 +5,8 @@ Users should be able to log in to their individual accounts
 
 
 ***TODO***
-Issue in setting withdraw limit of savings to default to 500
+Test all get/set methods and for differences between savings vs checking accounts
 change all ints to strings????
-Test the set withdraw limit to make sure its working properly
 add functionality which prevents multiple of the same user from being added
 
 
@@ -21,3 +20,6 @@ add functionality which prevents multiple of the same user from being added
 	Tested nickname functionality and organized methods in Account. 
 	Working on issue where savings account withdraw value does not default to 500
 	-Check out how accounts are being created in User class
+
+1/1/2020:
+	Resolved issue where savings account withdraw limit does not default to 500
