@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
 	public static void main(String[] args) {
-	    User a = new User("John", "Smith", 1);
+	    User a = new User("JSmith", "password", 1, "John", "Smith");
 	    a.createCheckingsAccount();
 	    a.createSavingsAccount();
 	    a.getAccount(1).deposit(100);
@@ -11,7 +11,6 @@ public class Main {
 	    System.out.println(a.getAccount(1).getWithdrawLimit());
 	    System.out.println(a.getAccount(1).getAccountID());
 
-	    User b = new User("Jane", "Smith", 2);
 
     }
 }
