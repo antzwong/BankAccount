@@ -8,6 +8,8 @@
 *.so
 *.idea
 .idea
+*.iml
+.iml
 
 # Packages #
 ############
