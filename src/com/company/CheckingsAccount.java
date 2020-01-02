@@ -3,7 +3,7 @@ package com.company;
 
 public class CheckingsAccount extends Account {
 
-    public CheckingsAccount(int accountID) {
+    public CheckingsAccount(Integer accountID) {
         super(accountID);
     }
 

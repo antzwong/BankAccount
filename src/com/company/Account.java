@@ -4,13 +4,13 @@ public class Account {
     //account will initiallly have 0 dollars
     //have account types where there are limits on withdrawls
 
-    private int accountID;
+    private Integer accountID;
     private double balance;
     private double withdrawLimit;
     private boolean accountType; //true = checkings
     private String nickname; //nickname of the account
 
-    public Account(int accountID) {
+    public Account(Integer accountID) {
         this.accountID = accountID;
         this.balance = 0;
     }

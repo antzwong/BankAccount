@@ -2,7 +2,7 @@ package com.company;
 
 public class SavingsAccount extends Account {
 
-    public SavingsAccount(int accountID) {
+    public SavingsAccount(Integer accountID) {
         super(accountID);
         super.setWithdrawLimit(500);
     }
