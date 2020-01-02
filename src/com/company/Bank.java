@@ -12,7 +12,7 @@ public class Bank {
 
 
 
-    void addUser(String username, String password, int SSN, String firstName, String lastName) {
+    void addUser(String username, String password, Integer SSN, String firstName, String lastName) {
         if (userExists(SSN, username)) {
             return;
         } else {
@@ -23,14 +23,14 @@ public class Bank {
 
     }
 
-    User createUser(String username, String password, int SSN, String firstName, String lastName) {
+    User createUser(String username, String password, Integer SSN, String firstName, String lastName) {
         return new User(username, password, SSN, firstName, lastName);
     }
 
 
     //technical question. would it be easier to have one method test both SSN and uername or two seperate methods
 
-    private boolean userExists(int SSN, String username) {
+    private boolean userExists(Integer SSN, String username) {
         for (User i : users) {
             if (Objects.equals(i.getSSN(), SSN)) {
                 System.out.println("User already exists");

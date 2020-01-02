@@ -9,11 +9,11 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
-    private int SSN;
+    private Integer SSN;
     private ArrayList<Account> accounts; //user does not need to have a bank account
 
 
-    public User (String username, String password, int SSN, String firstName, String lastName) {
+    public User (String username, String password, Integer SSN, String firstName, String lastName) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -39,11 +39,11 @@ public class User {
         this.password = password;
     }
 
-    public String getfullName() {
+    String getfullName() {
         return firstName + " " + lastName;
     }
 
-    public int getSSN() {
+    Integer getSSN() {
         return SSN;
     }
 
@@ -82,7 +82,7 @@ public class User {
         accounts.add(temp);
     }
 
-    private int generateAccountID() {
+    private Integer generateAccountID() {
         return accounts.size();
     }
 

@@ -6,7 +6,7 @@ public class Main {
 	    User a = new User("JSmith", "password", 1, "John", "Smith");
 	    a.createCheckingsAccount();
 	    a.createSavingsAccount();
-	    a.getAccount(1).deposit(100);
+	    a.getAccount(1).deposit(100.0);
 
 	    System.out.println(a.getAccount(1).getWithdrawLimit());
 	    System.out.println(a.getAccount(1).getAccountID());
