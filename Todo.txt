@@ -6,8 +6,14 @@ Users should be able to log in to their individual accounts
 
 ***TODO***
 Test all get/set methods and for differences between savings vs checking accounts
+Need to add feature where there cannot be duplicate usernames
+Check if classes like account or user need to be made private
 change all ints to strings????
+Add try catches
 add functionality which prevents multiple of the same user from being added
+	be careful with these new users, verifying SSN/Username and passing nulls
+
+Convert ints to Integers
 
 
 
@@ -23,3 +29,6 @@ add functionality which prevents multiple of the same user from being added
 
 1/1/2020:
 	Resolved issue where savings account withdraw limit does not default to 500
+
+1/2/2020:
+	Created bank class. Can now add multiple users

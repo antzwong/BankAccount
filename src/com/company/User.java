@@ -4,24 +4,46 @@ import java.util.ArrayList;
 
 
 public class User {
+
+    private String username;
+    private String password;
     private String firstName;
     private String lastName;
     private int SSN;
     private ArrayList<Account> accounts; //user does not need to have a bank account
 
 
-    public User (String firstName, String lastName, int SSN) {
+    public User (String username, String password, int SSN, String firstName, String lastName) {
+        this.username = username;
+        this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.SSN = SSN;
         this.accounts = new ArrayList<Account>();
     }
 
-    public String getUserName() {
+
+    String getPassword() {
+        return password;
+    }
+
+    String getUsername() {
+        return username;
+    }
+
+    void setUsername(String username) {
+        this.username = username;
+    }
+
+    void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getfullName() {
         return firstName + " " + lastName;
     }
 
-    public int getUserSSN() {
+    public int getSSN() {
         return SSN;
     }
 
